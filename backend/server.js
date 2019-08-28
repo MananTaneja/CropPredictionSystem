@@ -16,6 +16,8 @@ connection.connect((err) => {
 
 })
 
+const app = express();
+
 app.get('/getdata', (req, res) => {
     let sql = 'select * from course;' // can put any table name here, basically just a mysql query 
     let query = connection.query(sql, (err, result) => {
@@ -24,8 +26,6 @@ app.get('/getdata', (req, res) => {
         res.send("Data captured from table course");
     })
 })
-
-const app = express();
 
 
 

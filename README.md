@@ -1,9 +1,19 @@
 # CropPredictionSystem
 
-## Connecting to the database
+## How to run it on your PC
 
-Traverse to backend folder in your terminal and run the following commands
+1. Install all the modules required:
 
-1. npm run install_dep
-2. npm run install_dev
-3. npm run server
+- npm install in parent directory
+- npm install in client directory
+
+2. Set up the database:
+
+- The database schema model is given in the models folder
+- Set up the mysql database and make the changes of the connection as required in database/db.js file
+
+3. Commands to run:
+
+- node server.js in root of the folder
+- node crop_data.js in root of the folder
+- npm start in client directory

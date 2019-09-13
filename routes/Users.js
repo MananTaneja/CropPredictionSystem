@@ -5,6 +5,9 @@ const jwt = require('jsonwebtoken')
 const bcrypt = require('bcrypt')
 
 const User = require('../models/User')
+
+User.findAll()
+  .then((users) => console.log(users));
 users.use(cors())
 
 process.env.SECRET_KEY = 'secret'

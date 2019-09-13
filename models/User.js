@@ -1,7 +1,7 @@
 const Sequelize = require('sequelize')
 const db = require('../database/db.js')
 
-module.exports = db.sequelize.define(
+const User = db.define(
   'user',
   {
     id: {
@@ -30,3 +30,5 @@ module.exports = db.sequelize.define(
     timestamps: false
   }
 )
+
+module.exports = User;

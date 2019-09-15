@@ -27,7 +27,8 @@ const User = db.define(
     }
   },
   {
-    timestamps: false
+    timestamps: false,
+    underscored: true;
   }
 )
 

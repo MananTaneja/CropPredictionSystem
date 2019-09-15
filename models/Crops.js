@@ -16,13 +16,14 @@ const Crop = db.define(
         }
     },
     {
-        timestamps: false
+        timestamps: false,
+        underscored: true
     }
 )
 
-Crop.sync({ alter: true }).then(
-    console.log('Table synced on alter of table')
-)
+// Crop.sync({ alter: true }).then(
+//     console.log('Table synced on alter of table')
+// )
 
 
 module.exports = Crop
